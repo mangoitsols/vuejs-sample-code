@@ -1,0 +1,244 @@
+/**** working area *****/
+.work_area {
+    padding-left: 170px;
+    padding-bottom: 94px;
+  }
+  
+  /**** timeline css ****/
+  
+  .form_timeline {
+    display: block;
+    width: 100%;
+    margin: 90px 0 0;
+  }
+  
+  .form_timeline ul {
+    width: 70%;
+    display: flex;
+    margin: auto;
+  }
+  
+  .form_timeline ul li {
+    width: 16.66%;
+    list-style: none;
+    position: relative;
+  }
+  
+  .form_timeline ul li::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      background: #232765;
+      border-radius: 100%;
+      position: absolute;
+      right: 0;
+      top: -2px;
+  }
+  
+  .form_timeline ul li p {
+      display: block;
+      border-top: 1px solid #d3d3d3;
+      padding: 17px 0 0;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 13px;
+      color: #6d6f95;
+  }
+  
+  .form_timeline ul li p span {
+    opacity: 0;
+  }
+  
+  .form_timeline ul li.text-show p span {
+    opacity: 1;
+  }
+
+  .form_timeline ul li::after {
+    content: '';
+    width: 0%;
+    background: #484dca;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    height: 4px;
+    transition: all 0.5s ease;
+}
+
+.form_timeline ul li.active::after {
+  width: 100%;
+}
+  
+  /**** timeline css close ****/
+  
+  /******* workorder form css *******/
+  
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    color: #454766;
+  }
+  
+  .form_part {
+    width: 500px;
+    display: block;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+  
+  .form_part h2 {
+      font-weight: 700;
+      font-size: 1.9rem;
+      color: #454766;
+  }
+
+  .form_panel {
+      text-align: left;
+      margin: 2px 0 0;
+  }
+
+  .form_panel h4 {
+      font-weight: 700;
+      font-size: 18px;
+      margin: 50px 0 30px;
+  }
+
+  .form_inner {
+    margin: 22px 0 0;
+    display: block;
+}
+
+.form_inner label {
+    font-weight: 500;
+    color: #454766;
+    font-size: 0.99rem;
+    margin: 0 0 6px;
+}
+
+.form_inner .form-group {
+    margin-bottom: 1.7rem;
+}
+  
+  
+.form_part_bottom_panel {
+  border-top: 1px solid #c1c1c1;
+  padding: 12px 0;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  width: 90.5%;
+  right: 0;
+  background: #ffff;
+}
+
+.form_part_bottom_inner_panel {
+  width: 65%;
+  display: block;
+  margin: auto;
+}
+
+.theme-color1 {
+  background-color: #484dca !important;
+  border-color: #484dca !important;
+  color: #fff;
+}
+
+.theme-button1 {
+  border-color: #484dca !important;
+  color: #484dca !important;;
+}
+
+.theme-button1:hover {
+  background-color: #484dca !important;
+  color: #fff !important;
+}
+
+.form_part_bottom_inner_panel button {
+  margin-left: 20px;
+}
+
+
+/****** accordian style *****/
+
+.accordian_box {
+  display: block;
+  margin: 50px 0 0;
+}
+
+.accordian_main .card {
+  border: 0;
+}
+
+.accordian_main {
+  margin: 0 0 30px;
+}
+
+.accordian_main .card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+button.btn.btn-info.btn-block.collapsed {
+  border-bottom: 1px solid #b3b3b3 !important;
+  border-radius: 0;
+  padding-bottom: 16px;
+}
+
+.accordian_title button {
+  color: #484dca !important;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  background: transparent !important;
+  border: 0 !important;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.accordian_title button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.accordian_title button::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  border-style: solid;
+  border-width: 0 10px 13px 10px;
+  border-color: transparent transparent #aeaecb transparent;
+  transform: translateY(-50%);
+}
+
+/****** accordian style close *****/
+  
+  /******* workorder form css close *******/
+  
+  .sidebar_fixed {
+      width: 150px;
+      position: fixed;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: #232765;
+      padding: 40px 20px 0;
+  }
+  
+  .sidebar_fixed ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar_fixed ul li {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .sidebar_fixed ul li a {
+    color: #fff;
+  }
